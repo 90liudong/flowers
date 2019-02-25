@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>数据显示</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <style type="text/css">
+    html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<p style="text-align: center;">各点击情况</p>
+<div style="padding-left:8%;">
+
+  <span>一分钟解锁广漂档案点击数</span><span style="margin-left: 5%;">{$kind.gstart}次</span><br>
+  <span>output点击数</span><span style="margin-left: 5%;">{$kind.goutput}次</span><br>
+  <span>最后一题点击数</span><span style="margin-left: 5%;">{$kind.gend}次</span><br>
+  <span>优惠券点击数</span><span style="margin-left: 5%;">{$kind.gyouhui}次</span><br>
+</div>
+<p style="text-align: center;">职业选择情况</p>
+<div >
+  {foreach $work as $item}
+    <span style="margin-left: 8%">{$item.workname}</span><span style="margin-left: 10%;">{$item.num}人</span><br>
+  {/foreach}
+</div>
+<p style="text-align: center;">凭直觉热水里泡什么</p>
+<div style=" padding-left: 8%;">
+  {foreach $six as $item}
+    <span style="margin-left: 10px">{$item.opname}</span><span style="margin-left: 5%;">{$item.num}人</span><br>
+  {/foreach}
+</div>
+<p style="text-align: center;">在办公室我希望能喝</p>
+<div style=" padding-left: 8%;padding-bottom: 20px;">
+  {foreach $seven as $item}
+    <span style="margin-left: 10px">{$item.opname}</span><span style="margin-left: 5%;">{$item.num}人</span><br>
+  {/foreach}
+</div>
+</body>
+</html>

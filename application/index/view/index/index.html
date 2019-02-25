@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  
+  
+  <meta name="format-detection" content="telephone=no, email=no">
+  <title>挺正经的广漂档案</title>
+  <link rel="stylesheet" href="__STATIC__/css/animate.css">
+  <link rel="stylesheet" href="__STATIC__/css/style2.css?v=88888888888">
+  <style type="text/css">
+ .content input {
+    visibility: hidden;
+    width: 0;
+}
+.content input::before{
+  visibility: initial;
+}
+body,html{
+  padding: 0;
+  margin: 0;  
+}
+.shu3{
+  position: absolute !important;
+  top: 0 !important;
+  left:0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 0 !important;
+  z-index: -1;
+}
+.jump{
+    position: absolute;
+    top: 88%;
+    width: 18%;
+    left: 64%;
+    height: 5%;
+}
+</style>
+
+</head>
+<body>
+
+  <div class="page-wrap">
+    <div id="loading">
+    <p>距离下班<br>还有 <span class="minutes">6</span> 分钟</p>
+    <button id="video_control" style="display:none">START</button>
+    <div class="progress" style="    position: absolute;top: 80%;left: 5%;width: 90%;">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background-color: gray;">
+        <span class="sr-only">0% Complete</span>
+      </div>
+    </div>
+    {if condition="$sign eq 1"}
+    <div class="jump"><img src="__STATIC__/images/jump.png" style="width: 100%;height: 100%;"></div>
+    {/if}
+  </div>
+    <div class="page page_video">
+      <video preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint" x-webkit-airplay="true" webkit-playsinline="true" playsinline="true" id="video_init">
+        <source src="__STATIC__/images/init.mp4" type="video/mp4">
+      </video>
+
+      <section class="test_begin" style="display:none;">
+        <button id="test_begin" style="display: none;">一分钟解锁你的 <span>广漂档案</span></button>
+      </section>
+      <audio src="__STATIC__/images/back.mp3" id="audio_init" loop></audio>
+    </div>
+    <style type="text/css">
+ 
+    </style>
+    <div class="page page_0">
+     
+     <style type="text/css">
+
+        </style>
+        <div class="dd1">
+          
+          <span id="test11" style="cursor: pointer;top: 20%;width: 47%;left: 44%;">2017-01-01</span>
+
+ </div>
+        <section class="sex" style="    position: absolute;top: 43%;left: 14%;">
+
+          <div class='spe'>
+            <label for="male"><input type='radio' name='sex' id='male'><img src="__STATIC__/images/male.png" alt="男"></label>
+            <label for="female"><input type='radio' name='sex' id='female'><img src="__STATIC__/images/female.png" alt="男"></label>
+          </div>
+          <div style="clear: both;"></div>
+        </section>
+        <section class="work" style="position: absolute;top: 63%;left: 9%;">
+
+          <p id='work_title' style="">请选择你的职业</p>
+
+          <div style="clear: both;"></div>
+        </section>
+          <div class="ttaann" >
+              <ul id='work_list'>
+                <li class="lili" data-work='1' style="padding-top: 6%;"><div class="miaosu">不为甲方爸爸屈服的</div><div class="zhiwei">设计狮</div>
+                <div style="clear: both;"></div>
+                </li>
+                <li class="lili" data-work='2'><div class="miaosu">总想搞大事情的</div><div class="zhiwei">策划</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='3'><div class="miaosu">世界不止0和1的</div><div class="zhiwei">程序猿</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='4'><div class="miaosu">主内小能手的</div><div class="zhiwei">行政</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='5'><div class="miaosu">数不平何以平天下的</div><div class="zhiwei">财务</div>
+                <div  style="clear: both;"></div></li>
+                <li class="lili" data-work='6'><div class="miaosu">德智体美劳全面发展的</div><div class="zhiwei">公职员</div>
+                <div style="clear: both;"></div></li>
+                <li  class="lili"class="lili" data-work='7'><div class="miaosu">不是人人都能当的</div><div class="zhiwei">产品汪</div>
+                <div  style="clear: both;"></div></li>
+                <li class="lili"  data-work='8'><div class="miaosu">一瓶水卖300块的</div><div class="zhiwei">HR</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='9'><div class="miaosu">背着锅去上班的</div><div class="zhiwei">运营</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='10'><div class="miaosu">能把梳子卖给和尚的</div><div class="zhiwei">销售人</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='11'><div class="miaosu">24小时都在线的</div><div class="zhiwei">老板</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='12'><div class="miaosu">颜值与口才并存的</div><div class="zhiwei">商务</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='13'><div class="miaosu">先把自己写哭的</div><div class="zhiwei">文案</div>
+                <div style="clear: both;"></div></li>
+                <li class="lili" data-work='14'><div class="miaosu">上面没提到的</div><div class="zhiwei">其他职业</div>
+                <div style="clear: both;"></div></li>
+              </ul>
+          </div>
+        
+         <div class=" lle"><img  src="__STATIC__/images/arror_left.png" alt="" id='' class="whf"></div>
+      <div class="llr"><img  src="__STATIC__/images/arror_right.png" alt="" id='' class="whf"></div>
+         
+        
+    </div>
+
+    <div class="page page_1">
+      <div class="top top1 or" ><img  src="__STATIC__/action/1-0.png" alt="" id='' class="whf"></div>
+      <div class="left1 left11 or"><img  src="__STATIC__/action/1-1.png" alt="" id='' class="whf"></div>
+      <div class="left2 left21 or"><img  src="__STATIC__/action/1-2.png" alt="" id='' class="whf"></div>
+      <div class="right1 right11 or"><img  src="__STATIC__/action/1-3.png" alt="" id='' class="whf"></div>
+      <div class="top top12 or" ><img  src="__STATIC__/action/1-5.png" alt="" id='' class="whf"></div>
+      <img src="__STATIC__/images/tea.png" alt="茶叶" class="cha" id='tea'>
+      <div class="title title_1 ti1" >
+        <div class="pp">平均每天<br>战斗多长时间</div>
+      </div>
+      <div class="content content_1" style="height: 55%;">
+          <label for="1_A"><input type='radio' name='1' id='1_A' data-answer='1_A'><span>A</span> 朝九晚五美滋滋,正常上班族</label>
+          <label for="1_B"><input type='radio' name='1' id='1_B' data-answer='1_B'><span>B</span> 老板加钟，我还能上</label>
+          <label for="1_C"><input type='radio' name='1' id='1_C' data-answer='1_C'><span>C</span> 一天一小加，三天一大加，绝望的上班族</label>
+          <label for="1_D"><input type='radio' name='1' id='1_D' data-answer='1_D'><span>D</span> 下班？不存在的</label>
+        <section class="change" style="margin-top: 1%;">
+          <p class="left"></p>
+          <p class="right"></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="page page_2">
+      <div class="top "><img src="__STATIC__/action/tongshi.png" alt="" id='' class="whf"></div>
+      <div class="left1 "><img src="__STATIC__/action/lingdai.png" alt="" id='' class="whf"></div>
+      <div class="left2 "><img src="__STATIC__/action/gwbao.png" alt="" id='' class="whf"></div>
+      <div class="right1 "><img src="__STATIC__/action/kouhong.png" alt="" id='' class="whf"></div>
+      <img src="__STATIC__/images/tea.png" alt="茶叶" class="cha" id='tea'>
+            <div class="title title_1 ti1" style="margin-top: 26%;" >
+        <div class="pp">同事通常都是<br>这么描述我的</div>
+      </div>
+      <div class="content content_2" style="    margin-top: -2%;
+    height: 60%;">
+        <label for='2_A' style="padding-top: 7%;"><input type='radio' name='2' id='2_A' data-answer='2_A'><span>A</span> 先有思路和逻辑，再优化迭代</label>
+        <label for='2_B'><input type='radio' name='2' id='2_B' data-answer='2_B'><span>B</span> 过程是混乱和艺术的，结果是清晰和惊艳的</label>
+        <label for='2_C'><input type='radio' name='2' id='2_C' data-answer='2_C'><span>C</span> 擅长于运用经验习得，某些领域有自己的心得</label>
+        <label for='2_D'><input type='radio' name='2' id='2_D' data-answer='2_D'><span>D</span> 做事总是井井有条，稳如泰山</label>
+        <section class="change">
+          <p class="left"></p>
+          <p class="right"></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="page page_3">
+      <div class="top top3"><img src="__STATIC__/action/3-4.png" alt="" id='' class="whf"></div>
+      <div class="left1 left13"><img src="__STATIC__/action/3-1.png" alt="" id='' class="whf"></div>
+      <div class="left2 left23"><img src="__STATIC__/action/3-0.png" alt="" id='' class="whf"></div>
+      <div class="right1 right13"><img src="__STATIC__/action/3-3.png" alt="" id='' class="whf"></div>
+      <img src="__STATIC__/images/tea.png" alt="茶叶" class="cha" id='tea'>
+               <div class="title title_1 " style="margin-top: 23%;" >
+        <div class="pp">我是怎么安排<br>休息日的</div>
+      </div>
+      <div class="content content_3" style="height: 55%;">
+        <label for="3_A" style="    margin-left: 5%;"><input type='radio' name='3' id='3_A' data-answer='3_A'><span>A</span> 约约约，浪浪浪<br>吃喝玩乐我最棒！</label>
+        <label for="3_B"><input type='radio' name='3' id='3_B' data-answer='3_B'><span>B</span> 人是铁，床是磁铁</label>
+        <label for="3_C"><input type='radio' name='3' id='3_C' data-answer='3_C'><span>C</span> 讲座峰会的老司机</label>
+        <label for="3_D"><input type='radio' name='3' id='3_D' data-answer='3_D'><span>D</span>健身夜跑游泳爬山<br>混迹在运动圈</label>
+        <section class="change">
+          <p class="left"></p>
+          <p class="right"></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="page page_4" style="overflow:hidden;">
+       <div class="top top4"><img src="__STATIC__/action/4-6.png" alt="" id='' class="whf"></div>
+      <div class="left1 left14"><img src="__STATIC__/action/4-0.png" alt="" id='' class="whf"></div>
+      <div class="left2 left24"><img src="__STATIC__/action/4-1.png" alt="" id='' class="whf"></div>
+      <div class="right1 right14"><img src="__STATIC__/action/4-3.png" alt="" id='' class="whf"></div>
+      <img src="__STATIC__/images/tea.png" alt="茶叶" class="cha" id='tea'>
+                <div class="title title_1 " style="margin-top: 26%;    height: 22%;" >
+        <div class="pp" style="margin-top: 16%;font-size: 2.2rem;">最重要的是</div>
+      </div>
+      <div class="content content_4" style="height: 54%">
+      <div style="    padding-top: 48%;">
+        <label for="4_A" style="padding: 0; "><input type='radio' name='4' id='4_A' data-answer='4_A' value='1-2-3'><span>A</span>123</label>
+        <label for="4_B" style="padding: 0; "><input type='radio' name='4' id='4_B' data-answer='4_B' value='1-2-4'><span>B</span>124</label>
+        <label for="4_C" style="padding: 0; "><input type='radio' name='4' id='4_C' data-answer='4_C' value='1-2-5'><span>C</span>125</label>
+        <label for="4_D" style="padding: 0; "><input type='radio' name='4' id='4_D' data-answer='4_D' value='2-3-5'><span>D</span>235</label>
+        <label for="4_E" style="padding: 0; "><input type='radio' name='4' id='4_E' data-answer='4_E' value='2-4-5'><span>E</span>245</label>
+      </div>
+        <section class="change" style="margin-top: -2%;">
+          <p class="left"></p>
+          <p class="right"></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="page page_5">
+     <div class="top top5"><img src="__STATIC__/action/5-0.png" alt="" id='' class="whf"></div>
+      <div class="left1  left15"><img src="__STATIC__/action/5-1.png" alt="" id='' class="whf"></div>
+      <div class="left2  left25"><img src="__STATIC__/action/5-2.png" alt="" id='' class="whf"></div>
+      <div class="right1 right15"><img src="__STATIC__/action/5-3.png" alt="" id='' class="whf"></div>
+      <img src="__STATIC__/images/tea.png" alt="茶叶" class="cha" id='tea'>
+                <div class="title title_1 " style="margin-top: 22%;height: 22%;" >
+        <div class="pp" style="margin-top: 13%;font-size: 1.6rem;">我的广州生活<br>是这样的(可多选)</div>
+      </div>
+      <div class="content content_5" style="height: 61%;">
+        <label for="5_A"><input type='checkbox' name='5' id='5_A' data-answer='5_A'><span>A</span>空调在吸我体内的精华</label>
+        <label for="5_B"><input type='checkbox' name='5' id='5_B' data-answer='5_B'><span>B</span>方圆三公里的外卖吃了个遍<br>广州真正的美食却还没尝过</label>
+        <label for="5_C"><input type='checkbox' name='5' id='5_C' data-answer='5_C'><span>C</span>锻炼身体的方式是赶公交</label>
+        <label for="5_D"><input type='checkbox' name='5' id='5_D' data-answer='5_D'><span>D</span>空有小资格调下午茶的心<br>无奈办公室速溶咖啡的命</label>
+        <label for="5_E"><input type='checkbox' name='5' id='5_E' data-answer='5_E'><span>E</span>一不留神，又到凌晨一两点</label>
+        <label for="5_F" style="padding-bottom: 2%;"><input type='checkbox' name='5' id='5_F' data-answer='5_F'><span>F</span>为了保护眼睛，我从电脑桌面<br>改成了绿色</label>
+        <section class="change" style="margin-top: -6%;">
+          <p class="left"></p>
+          <p class="right"></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="page page_6">
+      <div class="top top6"><img src="__STATIC__/action/6-0.png" alt="" id='' class="whf"></div>
+      <div class="left1 left16 "><img src="__STATIC__/action/6-1.png" alt="" id='' class="whf"></div>
+      <div class="left2 left26"><img src="__STATIC__/action/6-2.png" alt="" id='' class="whf"></div>
+      <div class="right1 right16"><img src="__STATIC__/action/6-3.png" alt="" id='' class="whf"></div>
+      <div class="right1 right2"><img src="__STATIC__/action/6-4.png" alt="" id='' class="whf"></div>
+      <img src="__STATIC__/images/tea.png" alt="茶叶" class="cha" id='tea'>
+      <div class="title title_1 " style="margin-top: 23%;height: 26%;" >
+        <div class="pp" style="margin-top: 16%;font-size: 1.6rem;">凭直觉你会往<br>热水里泡点啥</div>
+      </div>
+      <div class="content content_6" style="    height: 60%;">
+        <label for="6_A" class="xall"><input type='radio' name='6' id='6_A' data-answer='6_A'><span>A</span>提神醒脑的薄荷</label>
+        <label for="6_B" class="xall"><input type='radio' name='6' id='6_B' data-answer='6_B'><span>B</span>美容养颜的玫瑰</label>
+        <label for="6_C" class="xall"><input type='radio' name='6' id='6_C' data-answer='6_C'><span>C</span>补水美白的柠檬</label>   
+        <label for="6_D" class="xall"><input type='radio' name='6' id='6_D' data-answer='6_D'><span>D</span>养生润肺的桂花</label>
+        <label for="6_E" class="xall"><input type='radio' name='6' id='6_E' data-answer='6_E'><span>E</span>清肝明目的胎菊</label>
+        <label for="6_F" class="xall"><input type='radio' name='6' id='6_F' data-answer='6_F'><span>F</span>清香安神的茉莉</label>
+        <label for="6_G" class="xall"><input type='radio' name='6' id='6_G' data-answer='6_G'><span>G</span>清热解毒的金银花</label>
+        <section class="change" style="    margin-top: 0%;">
+          <p class="left"></p>
+          <p class="right"></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="page page_7">
+      <div class="top top7"><img src="__STATIC__/action/7-0.png" alt="" id='' class="whf"></div>
+      <div class="left1 left17"><img src="__STATIC__/action/7-1.png" alt="" id='' class="whf"></div>
+      <div class="left2 left27"><img src="__STATIC__/action/7-2.png" alt="" id='' class="whf"></div>
+      <div class="right1 right17"><img src="__STATIC__/action/7-3.png" alt="" id='' class="whf"></div>
+      <img src="__STATIC__/images/tea.png" alt="茶叶" class="cha" id='tea'>
+      <div class="title  title7" style="    margin-top: 32%;height: 21%;">
+      <div class="pp" style="margin-top: 8%;font-size: 1.6rem;">在办公室里<br>我希望能常常喝</div>   
+      </div>
+      <div class="content content_7" style="   height:54%;">
+        <label for="7_A" class="all" style=" margin-left: 11%;padding-top: 7%;font-size: 1.2rem;"><input type="radio" name='7' id='7_A' data-answer='7_A' ><span>A</span> 冰镇刺激的碳酸饮料</label>
+        <label for="7_B" class="all" style="    margin-left: 5%;font-size: 1.2rem;"><input type="radio" name='7' id='7_B' data-answer='7_B'><span>B</span> 浓郁醇厚的咖啡</label>
+        <label for="7_C" class="all" style="font-size: 1.2rem;"><input type="radio" name='7' id='7_C' data-answer='7_C'><span>C</span> 清新健康的花草茶</label>
+        <label for="7_D" class="all" style="font-size: 1.2rem;"><input type="radio" name='7' id='7_D' data-answer='7_D'><span>D</span> 简简单单的白开水</label>
+        <section class="change"  style="margin-top: 2%;    width: 70%;">
+          <p class="left"></p>
+          <p  id="final" class=" lastright"></p>
+        </section>
+         
+      </div>
+    </div>
+    <style type="text/css">
+      
+    </style>
+    <div class="page page_9">
+      <section class="result" style="position: relative;color: black;">
+        <div class="wtop s1">
+          正在检测三观.....<br>
+          你刚才犹豫了1.5秒...<br>
+          你有点紧张....
+        </div>
+        <div class="wtop s2" style=" margin-top: 50%;">
+          文案加班中...<br>
+          设计狮作业中...<br>
+          程序猿正在路上...
+        </div>
+        <div class="wtop s3" style=" margin-top: 10%;">
+          广漂档案已经生成.....<br>
+          结果输出中...<br>
+          请稍等....
+        </div>
+      </section>
+    </div> 
+    <div class="page page_8">
+      <section class="result shu" id="shuchu"  style="position: relative;border-radius: 12px;">
+        <div class="geyan">
+          <div class="ggeeyyaann">hahahaahahhahaahhahhahahaha九分裤福建高考路上大家观看了世界的妇女来看是你每个快递费那么</div>
+        </div>
+        <div class="headimgurl"> <img src="{$headimgurl}" alt="广漂等级" style="width:100%;"></div>
+        <div class="nickname">{$nickname}</div>
+        <img id="dengji" src="__STATIC__/images/guang_4.png" alt="广漂等级">
+      
+        <div class="time_res1">你在广州工作<br>已经<span class="mytime">1034 &nbsp;</span>天啦</div>
+        <section>
+          <p class="work_res"><span>职位</span><br><span>你没有选择职位</span></p>
+          <ul class="list_res">
+          </ul>
+        <div style="position: absolute;z-index: 8;left: 9%;top: 90%;width: 25%;height: 10%;color: rgb(208,185,48);"><img src="__STATIC__/images/chabao.png" style="width: 100%;height: 100%;"></div>
+        <div style="position: absolute;z-index: 8;left: 64%;top: 90%;width: 29%;height: 10%;color: rgb(208,185,48);"><img src="__STATIC__/images/ewm.png " style="width: 100%;height: 100%;"></div>
+        </section>
+      </section>
+    </div> 
+    <div class="page page_10">
+        <section class="result" style="position:relative">
+          <div class="cb">
+            即使职位一样
+            <br>
+            我们生来本就不一样
+            <div style="height:10px">
+            </div>
+            我们的态度各不一样
+            <br>
+            我们的行为各不一样
+            <div style="height:10px">
+            </div>
+            就像每杯水都一样
+            <br>
+            我们可以喝出不一样
+          </div>
+          <div class="middletu" style="margin-top:1%">
+            <img src="/gp/public/static/images/middlet.png" style="width:84%;margin-right:3%;height:30%">
+          </div>
+          <div class="cb" style="margin-top:-3%;font-size:1rem">
+            好的工作状态
+            <br>
+            离不开好的生活品质
+            <br>
+            生存还是生活取决于你的态度
+            <br>
+          </div>
+          <div class="middletu" style="margin-top:-1%">
+            <img src="/gp/public/static/images/youhui.png" style="width:73%;height:27%;margin-right:2%;padding-top:2%">
+          </div>
+          <div class="cb" style="margin-top:-3%;font-size:1rem;color:#363636;">
+            (给广漂同志的专属优惠)
+          </div>
+          <a class="tiao" style="cursor:pointer;">
+          </a>
+        </section>
+    </div>
+</div>
+<script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+<!-- <script src="__STATIC__/js/canvas2image.js"></script> -->
+<script src="__STATIC__/js/html2canvas.js"></script>
+
+<script>$.noConflict();</script>
+<script>
+var STEP =0;
+window.onload = function(){
+    var loading = document.getElementById('loading');
+    var video_control = document.getElementById('video_control');
+    var minutes = document.getElementsByClassName('minutes')[0];
+    var video_init = document.getElementById('video_init');
+    var tb = document.getElementById('test_begin');
+    var test_begin = document.getElementsByClassName('test_begin')[0];
+
+    setTimeout(function(){
+      video_control.style.display = 'block';
+      $("#jump").hide();
+    },4000)
+    for(var i = 0; i < 5; i++){
+      (function(n){
+        setTimeout(function(){
+          minutes.textContent = 5 - n;
+        },n*1000);
+      })(i);
+    }
+    for(var j = 0;j<41; j++){
+      (function(n){
+        setTimeout(function(){
+          var per = n*2.5+"%"
+          $(".sr-only").html(per+" Complete")
+          $(".progress-bar").css("width",per)
+        },n*100);
+      })(j);
+    }
+    video_control.onclick = function(e){
+      loading.style.display = 'none';     
+      video_init.play();
+      var newStyle = document.createElement('style');
+      newStyle.appendChild(document.createTextNode("\
+       @font-face {\
+          font-family: fzlt;\
+          src: url(__STATIC__/font/方正兰亭超细黑简体.ttf);\
+        }\
+         @font-face {\
+          font-family: bole;\
+          src: url(__STATIC__/font/伯乐老槐树.ttf);\
+        }\
+         @font-face {\
+          font-family: fangyuan;\
+          src: url(__STATIC__/font/方圆新华综.ttf);\
+        }\
+         @font-face {\
+          font-family: fzlthjt;\
+          src: url(__STATIC__/font/FZLTHJW.TTF);\
+        }\
+         @font-face {\
+          font-family: fangzheng;\
+          src: url(__STATIC__/font/方正兰亭黑.TTF);\
+        }\
+         @font-face {\
+          font-family: fangzheng_te;\
+          src: url(__STATIC__/font/方正兰亭特黑.TTF);\
+        }\
+         @font-face {\
+          font-family:yvwei;\
+          src: url(__STATIC__/font/禹卫书法行书简体.ttf);\
+        }\
+          @font-face {\
+          font-family: fangzheng_miao;\
+          src: url('__STATIC__/font/方正喵呜体.ttf');\
+        }\
+      "));
+      document.head.appendChild(newStyle);
+      // video_init.pause();
+      // video_init.style.display = 'none';
+      // test_begin.style.display = 'block';
+      // tb.style.display = 'block';
+      $.post("{:url('setOpid')}",{},function(data){
+        // alert("session生成啦")
+      })
+}
+$(".jump").click(function(){
+        loading.style.display = 'none';     
+      // video_init.play();
+      var newStyle = document.createElement('style');
+      newStyle.appendChild(document.createTextNode("\
+        @font-face {\
+          font-family: fzlt;\
+          src: url(__STATIC__/font/方正兰亭超细黑简体.ttf);\
+        }\
+         @font-face {\
+          font-family: bole;\
+          src: url(__STATIC__/font/伯乐老槐树.ttf);\
+        }\
+         @font-face {\
+          font-family: fangyuan;\
+          src: url(__STATIC__/font/方圆新华综.ttf);\
+        }\
+         @font-face {\
+          font-family: fzlthjt;\
+          src: url(__STATIC__/font/FZLTHJW.TTF);\
+        }\
+         @font-face {\
+          font-family: fangzheng;\
+          src: url(__STATIC__/font/方正兰亭黑.TTF);\
+        }\
+         @font-face {\
+          font-family: fangzheng_te;\
+          src: url(__STATIC__/font/方正兰亭特黑.TTF);\
+        }\
+         @font-face {\
+          font-family:yvwei;\
+          src: url(__STATIC__/font/禹卫书法行书简体.ttf);\
+        }\
+          @font-face {\
+          font-family: fangzheng_miao;\
+          src: url('__STATIC__/font/方正喵呜体.ttf');\
+        }\
+      "));
+      document.head.appendChild(newStyle);
+      video_init.pause();
+      video_init.style.display = 'none';
+      test_begin.style.display = 'block';
+      tb.style.display = 'block';
+})
+  video_init.onended = function() {
+    // alert("音频播放完成");
+    video_init.pause();
+    this.style.display = 'none';
+    test_begin.style.display = 'block';
+    tb.style.display = 'block';
+  };
+
+}
+</script>
+<script>
+    // var video_init = document.getElementById('video_init');
+    // var test_begin = document.getElementsByClassName('test_begin')[0];
+    // var page_video = document.getElementsByClassName('page_video')[0];
+  //    page_video.addEventListener('touchmove',function(e){
+  //   //  video_init.currentTime = 50;
+  //   // test_begin.display = 'block';
+  //   video_init.pause();
+  //   video_init.style.display = 'none';
+  //    test_begin.style.opacity = '1';
+  //   // test_begin.style.display = 'block';
+  //     // pages.signnext();
+  // })
+</script>
+<script src="__STATIC__/js/zepto.min.js"></script>
+<script src="__STATIC__/js/PageSlider2.js?v=77777777777"></script>
+<script src="__STATIC__/laydate/laydate.js"></script>
+<script>
+  PageSliderFlag1 = false
+  var video_init = document.getElementById('video_init');
+  var video_control = document.getElementById('video_control');
+  var test_begin = document.getElementsByClassName('test_begin')[0];
+  var test_begin_btn = document.getElementById('test_begin');
+  var audio_init = document.getElementById('audio_init');
+
+  test_begin_btn.onclick = function(){
+    PageSliderFlag1 = true;
+    pages.nextt2();
+    audio_init.play();
+    $.post("{:url('addClick')}",{data:"gstart"},function(data){
+        console.log("点击了一键解锁广漂档案了")
+    })
+  }
+  // setInterval(function(){
+  //   if(video_init.currentTime > 44){
+  //     video_init.pause();
+  //     video_init.style.display = 'none';
+  //     test_begin.style.display = 'block';
+  //   }
+  // },200)
+</script>
+
+<!-- 时间 -->
+
+<script>
+function isEmptyObject(e) {  
+    var t;  
+    for (t in e)  
+        return !1;  
+    return !0  
+}
+
+data1 = 2017-01-01;
+var myDate = new Date();
+endd = myDate.toLocaleDateString();
+
+  laydate.render({
+    elem: '#test11' //指定元素
+     ,theme: '#393D49'
+     ,event: 'click' //触发事件<br/>
+     ,min: '2000-01-01' //设定最小日期为当前日期  
+     ,max: endd//最大日期 
+     ,done: function(value, date, endDate){
+        // alert(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
+        var time_holder = document.getElementById('test11');
+
+        if (!isEmptyObject(date)) {
+          
+          if (date.month<10) {
+            date.month = "0"+date.month
+          }  
+         if (date.date<10) {
+            date.date = "0"+date.date
+          }         
+          var time_txt = date.year + '-' + date.month + '-' + date.date ;
+          date1 = date.year + '-' + date.month + '-' + date.date ;
+          time_holder.textContent = time_txt;
+        }else{
+          var time_txt = 2017 + '-' + 01 + '-' + 01 ;
+            time_holder.textContent = time_txt;
+        }
+        
+      }
+      ,position: 'fiex'
+  });
+
+
+</script>
+
+<!-- 页面滑动 -->
+<script>
+    var pages = new PageSlider({
+        pages: $('.page-wrap .page'),
+        direction: 'h',//horizontal or h
+        dev: 0
+    });
+   
+    var lefts = document.querySelectorAll('.change .left');
+    for(var m = 0; m < lefts.length; m++){
+      lefts[m].addEventListener('click',function(){ pages.prev() },false); 
+    };
+    var rights = document.querySelectorAll('.change .right');
+    for(var m = 0; m < rights.length; m++){
+
+      rights[m].addEventListener('click',function(){ 
+      var obj1 =document.getElementsByName("1")
+      var obj2 =document.getElementsByName("2")
+      var obj3 =document.getElementsByName("3")
+      var obj4 =document.getElementsByName("4")
+
+      var obj5 =document.getElementsByName("5")
+      var obj6 =document.getElementsByName("6")
+      
+
+      num1 = false
+      num2 = false
+      num3 = false
+      num4 = false
+      num5 = false
+      num6 = false
+      
+
+      for (var i=0;i<obj1.length;i++){ //遍历Radio 
+          if(obj1[i].checked){ 
+            num1 = true
+          }
+      } 
+      for (var i=0;i<obj2.length;i++){ //遍历Radio 
+          if(obj2[i].checked){ 
+            num2 = true
+          }
+      } 
+
+      for (var i=0;i<obj3.length;i++){ //遍历Radio 
+
+          if(obj3[i].checked){ 
+            num3 = true
+          }
+      } 
+      for (var i=0;i<obj4.length;i++){ //遍历Radio 
+
+          if(obj4[i].checked){ 
+            num4 = true
+          }
+      } 
+     for (var i=0;i<obj5.length;i++){ //遍历Radio 
+
+          if(obj5[i].checked){ 
+            num5 = true
+          }
+      } 
+     for (var i=0;i<obj6.length;i++){ //遍历Radio 
+
+          if(obj6[i].checked){ 
+            num6 = true
+          }
+      }
+ 
+      // alert(num1)  
+      pages.nexttt() 
+    },false);
+      //left[m].onclick = function(){ console.log('1') };
+    }
+    $(".llr").click(function(){
+      pages.next() 
+    })
+    $(".lle").click(function(){
+      pages.prev() 
+    })
+</script>
+<!-- 工作选择 -->
+<script>
+  var work;
+  jQuery('#work_title').click(function(){
+    jQuery('.ttaann').show();
+    jQuery('#work_list').show();
+  });
+   $('.lili').click(function(){
+    console.log($(this))
+    work = $(this).attr("data-work")
+    $('.ttaann').hide();
+    $('#work_list').hide();
+    $('#work_title').text($(this).find(".zhiwei").html());
+    console.log("工作编号",work)
+  });
+</script>
+
+<!-- 最后生成 -->
+
+<script>
+var gg = true;
+  $('#final').click(function(event) {
+    var obj7 =document.getElementsByName("7")
+      num7 = false
+      for (var i=0;i<obj7.length;i++){ //遍历Radio 
+        if(obj7[i].checked){ 
+          num7 = true
+        }
+      }
+    if(num7){
+       $.post("{:url('addClick')}",{data:"goutput"},function(data){
+        console.log("点击了output")
+      })
+      if (gg) {
+        gg = false
+
+        var works= {
+          '1':'设计狮',
+          '2':'策划' ,
+          '3':'程序猿',
+          '4':'行政',
+          '5':'财务',
+          '6':'公职员',
+          '7':'产品汪',
+          '8':'HR',
+          '9':'运营',
+          '10':'销售人',
+          '11':'老板',
+          '12':'商务',
+          '13':'文案',
+          '14':'我就是我'
+        };
+        var answers = {
+          '1':'不为甲方爸爸屈服',
+          '2':'总想搞大事情' ,
+          '3':'世界不止0和1',
+          '4':'强大的内心始终细心',
+          '5':'数不平何以平天下',
+          '6':'德智体美劳',
+          '7':'比上一次更好',
+          '8':'让金子发光',
+          '9':'背着锅去上班',
+          '10':'拿下订单只是开始',
+          '11':'十八般武艺',
+          '12':'cooperation',
+          '13':'入木三分一文即案',
+          '14':'深藏功与名',
+          '1_A':'高效专注、事半功倍、高效专注、日行千里',
+          '1_B':'爱岗敬业、勤劳的小蜜蜂、三好员工、我还要加班',
+          '1_C':'加班狂魔、无加班不欢、我爱工作、工作使我快乐',
+          '1_D':'公司之光、废寝忘食、我辈楷模、我辈楷模',
+          '2_A':'思路清晰、逻辑缜密、善于思考、统筹型',
+          '2_B':'思维活跃、天马行空、独具一格、创意型',
+          '2_C':'事半功倍、举一反三、游刃有余、技巧型',
+          '2_D':'心思细腻、井井有条、稳如白云山、稳健型',
+          '3_A':'敢于挑战、洒脱自在、及时行乐、大玩家、冒险星人',
+          '3_B':'闲情逸致、优哉游哉、周末睡觉、补觉星人',
+          '3_C':'鸿鹄之志、志在千里、潜力股、学习星人',
+          '3_D':'精力充沛、内外兼修、修身养性、运动星人',
+          '4_A':'浪漫主义、感性、真爱至上、有情饮水饱',
+          '4_B':'努力赚钱、有追求、艰苦奋斗、有钱途',
+          '4_C':'马甲线、钢铁侠、精气神、能量体',
+          '4_D':'技术流、精益求精、以一当十、出类拔萃',
+          '4_E':'业界口碑、值得信赖、双商在线、人气王',
+        };
+        var person = {};
+
+        var question_7 = {
+          '1':'浪漫主义、感性、真爱至上、有情饮水饱',
+          '2':'努力赚钱、有追求、艰苦奋斗、有钱途',
+          '3':'马甲线、钢铁侠、精气神、能量体',
+          '4':'技术流、精益求精、以一当十、出类拔萃',
+          '5':'业界口碑、值得信赖、双商在线、人气王'
+        };
+        //随机输出文案
+        var one = work-1;
+        two = parseInt(6*Math.random());
+        // if (one==6 ||one==11 ||one==12 ) {
+        //   two = parseInt(2*Math.random());
+        // }else if(one==9){
+        //   two = parseInt(1*Math.random());
+        // }else{
+        //   two = parseInt(3*Math.random());
+        // }
+        console.log(one)
+        console.log(two)
+           var geyan=[
+                  
+                  [
+                   "我的生活全是设计,对你却是真心",
+                   "生活没有 Ctrl+Z,只能一往无前",
+                   "如果Adobe是武功秘籍<br>那我已笑傲江湖",
+                   "我用套索工具改变万物<br>你一回眸就套住我的心",
+                   "我把刀放下,开始第 101 次修改",
+                   "眼前的黑不是黑你说的白是什么白"
+                  ],
+                  [
+                   "策划不了明天但可以策划如何过好明天",
+                   "脑细胞的代谢速度是正常人的两倍",
+                   "每一股血液,都是思想碰撞的火花",
+                   "一撇一捺<br>有人写成了“人”，有人画成了‘X’",
+                   "一个想法的诞生 + 十万八千里 =<br> 一个想法的落地",
+                   "何必循规蹈矩<br>何必走寻常路，何必常理出牌"
+                  ],
+                  [
+                    "我想改行,那你按下回车吧",
+                    "我想改行,那你按下回车吧",
+                    "这一行的代码我写什么<br>才能跳转到你的心呢",
+                    "“来,上次欠你的1050块<br>凑个整吧，1024就好”",
+                    "世界上最远的距离<br>是你在if我在else",
+                    "小时候老师夸我弹钢琴弹得特别快<br>于是我长大后成了一个程序员"
+                  ],
+                     [
+                   "听说跟行政谈恋爱就会特别省心",
+                   "我的客户是公司的同事<br>同事为公司创造更多客户",
+                   "做好每一件小事<br>但是一天居然有88件“小事”",
+                   "行政是打杂的<br>少林寺的扫地僧也是打杂的",
+                   "随风潜入办公室,润物细无声",
+                   "积点滴汇江海,成大事无小事"
+                  
+                  ],
+                    [
+                   "系统性地用货币翻译了整个经营活动",
+                   "我善于计算,但我从不算计",
+                   "漏掉一个零,重算到天明",
+                   "我的青春谁做主审计票据算数簿",
+                   " 别人以为我是腰缠万贯<br>其实我是腰肌劳损",
+                   "从明天起做一个幸福的人<br>面朝账本，春暖花开"
+                  ],
+                     [
+                   "喝最烈的酒,奔最幸福的小康",
+                   "我们没有自己的事业<br>只有公共事业",
+                   "富强民主文明和谐<br>爱国敬业诚信友善",
+                   "别低头，GDP会掉<br>别流泪，资本主义会笑",
+                   "今晚可以陪我去<br>社会主义道路那里散散步吗？",
+                   "你可以忘记我<br>但不能忘记社会主义核心价值观"
+                  ],
+                     [
+                   "不做一个偏执狂,怎么做出好产品",
+                   "如果按岗位来分星座,我们都是处女座",
+                   "如果用户体验是目标函数<br>那么我们负责找到最优解",
+                   "上知行业走向，下知用户体验<br>左通技术架构，右晓需求痛点",
+                   "这一次的终点,只是下一次的起点",
+                   "别人吃饭我想用户,别人睡觉我想交互"
+             
+                  ],
+                     [
+                   "把人招进来,只是工作的开始",
+                   "把人招进来,只是工作的开始",
+                   "有时候招个人,比招个对象还难",
+                   "有时候真的是人在江湖,身不由己",
+                   "上一次自我介绍的时候<br>我说自己是一名专业的人贩子",
+                   "这位同学,请说出你的故事"
+             
+                  ],
+                      [
+                   "要么回家,要么给用户一个家",
+                   "运筹帷幄的步步为营",
+                   "既然青春留不住,那就留住用户",
+                   "每当想用户的时候天空就下沙<br>然后就有了撒哈拉",
+                   "从开始做运营<br>突然就多了个亲生骨肉",
+                   "再给我两分钟,让我把工作总结完"
+             
+                  ],
+                      [
+                   "努力把更好的生活品质销售给客户",
+                   "钟声响起归家的讯号,但我还要加班",
+                    "有些人误解了我们<br>把更有质量的生活拒之门外",
+                    "大多数时候我们不坐办公室<br>大多数时候我们只走心",
+                    "世界上本没有路<br>走得多了，于是就有了销售人",
+                    "世界那么大，既然有了交集<br>就一定负责到底"
+                  ],
+                      [
+                   "比收支平衡更重要的是人心",
+                   "永远也不要安慰自己平凡可贵",
+                   "一不小心把企业当成了家。<br>----企业家",
+                   "一个人发起的革命<br>一群人的满腔热血",
+                   "工作三年，工作经验五年<br>原因加班",
+                   "违心地对小伙伴们老板着脸"
+             
+                  ],
+                      [
+                   "为双方想好方案,是彼此的安全感",
+                   "如果不能创造共赢<br>人生还有什么意义",
+                   "黑夜给了我黑色的眼睛<br>我用它来寻找合作伙伴",
+                   "进可面谈谋大计,退可泪洒 PPT",
+                   "为双方想好方案,是彼此的安全感",
+                   "不管我们中每个人的力量多大<br>都不如我们的力量大"
+                  ],
+                      [
+                   "文案不仅是文笔好的 更是走心的",
+                   "用文字去发声,用文字去发生",
+                   "写过很多大道理,希望能过好这一生",
+                    "第一千次江郎才尽<br>第一千零一次思如泉涌",
+                    "最怕睡前突然来了灵感<br>伏案又是天明",
+                   "甲方说这次文案要<br>有一种”风吹过的感觉。。。”"
+                  ],
+                  [
+                   "不积跬步，无以至千里",
+                   "欲戴皇冠，必承其重",
+                   "欲戴皇冠，必承其重",
+                   "欲戴皇冠，必承其重", 
+                   "路漫漫其修远兮，吾将上下而求索",
+                   "路漫漫其修远兮，吾将上下而求索"
+                  ]
+                 
+                ] 
+            console.log(geyan[one][two])
+        //时间
+        var date1 = $('#test11').html();
+        var myDate = new Date();
+        var endd = myDate.toLocaleDateString();
+        var dengji = document.getElementById('dengji');
+        // var date2 = new Date();
+        var date1 = new Date(date1);                       
+        var date2 = new Date(endd);
+        var days = Math.floor((date2-date1)/(24 * 3600 * 1000));
+        // alert("天数："+days+","+date2/(24 * 3600 * 1000)+","+date1/(24 * 3600 * 1000));
+        if (days<0) {
+          days=0;
+        }
+        $(".mytime").text(days);
+        if(0<=days && days<=365){
+          $("#dengji").attr('src','__STATIC__/images/guang_4.png'); 
+        } else if(365<days && days<=999){
+          dengji.src = '__STATIC__/images/guang_3.png';
+        } else if(999<days && days<=1825){
+          dengji.src = '__STATIC__/images/guang_2.png';
+        } else if(1825<days && days<=2900){
+          dengji.src = '__STATIC__/images/guang_1.png';
+        } else{
+          $("#dengji").attr('src','__STATIC__/images/guang_0.png'); 
+        }
+              //
+        //上传职业选择情况
+        //
+        $.post("{:url('addWork')}",{work:work},function(data){
+            console.log(data)
+        })
+        //上传选项选择情况
+        //
+        six = $('input[name="6"]:checked').data('answer').split('_');
+        seven = $('input[name="7"]:checked').data('answer').split('_');
+        six = six[1]
+        seven = seven[1]
+        $.post("{:url('addOption')}",{six:six,seven:seven},function(data){
+            console.log(data)
+        })
+        $(".work_res span:first-child").text(works[work]);
+        $(".work_res span:last-child").text(answers[work]);
+
+        person.question1 = $('input[name="1"]:checked').data('answer');
+        person.question2 = $('input[name="2"]:checked').data('answer');
+        person.question3 = $('input[name="3"]:checked').data('answer');
+        console.log("person=>",person)
+        var goal_1 = [];
+        var goal_2 = [];
+        for(var key in person){
+          goal_1.push(answers[person[key]]);
+        }
+        var val_7 = $('input[name="4"]:checked').val().split('-');
+        val_7.map(function(key){
+          goal_2.push(question_7[key]);
+        })       
+        // goal_1.shift();
+        function render_li(goal){ 
+          var ul_res = document.getElementsByClassName('list_res')[0];
+          for(var i = 0; i < goal.length; i++ ){
+            var random_num = Math.floor(4 * Math.random());
+            var li_res = document.createElement('li');
+            li_res.innerHTML = goal[i].split('、')[random_num];
+            ul_res.appendChild(li_res);
+          }
+        }
+        console.log("goal_1=>",goal_1)
+        console.log("goal_2=>",goal_2 )
+        render_li(goal_1);
+        render_li(goal_2);
+
+        $(".ggeeyyaann").html(geyan[one][two]);
+
+        saveImg()
+        pages.nexttt();
+      }else{
+        if(num7){
+           pages.signnext();
+        }
+   
+      }
+  }
+});
+$(document).on("click",".huahua",function(){
+      $.post("{:url('addClick')}",{data:"gend"},function(data){
+        console.log("点击了最后一题")
+      })
+      pages.next();
+})
+$(document).on("click",".tiao",function(){
+
+  $.post("{:url('addClick')}",{data:"gyouhui"},function(data){
+        console.log("点击了优惠劵")
+  })
+  window.location.href="https://h5.youzan.com/v2/ump/promocard/fetch?alias=1av8c65xe";
+})
+</script>
+</body>
+</html>

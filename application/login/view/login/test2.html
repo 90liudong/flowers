@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>动画</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="__STATIC__/css/addrs.css" />
+	
+	<link rel="stylesheet" href="__STATIC__/css/animate.min.css" />
+
+	<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oVNnc5pGCCUbuDTICeA19CdS2Nnl16M2&s"></script>   
+	<link href="__STATIC__/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+	<link rel="stylesheet" href="__STATIC__/css/coms.css">
+	<script type="text/javascript" src="__STATIC__/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.charfirst.pinyin.js"></script>
+    <script type="text/javascript" class="sc" src="__STATIC__/js/sort.js"></script>
+    <script type="text/javascript" class="sc" src="__STATIC__/js/back.js"></script>
+    <style type="text/css">
+       html,body{
+       		width: 100%;
+			height: 100%;
+			position: relative;
+			background: rgb(161, 197, 229);
+       }
+       
+		.one{
+			 height: 85px;
+		    width: 80%;
+		    background: yellowgreen;
+		    position: absolute;
+		    top: 20px;
+		    left: 10%;
+		    z-index: 1;
+		    border-radius: 2px;
+
+		}
+		.two{
+			height: 300px;
+			width: 80%;
+			background: yellowgreen;
+			position: absolute;
+			top:20%;
+			left: 10%;
+		    z-index: 1;
+
+		}
+		.three{
+		    height: 85px;
+		    width: 80%;
+		    background: yellow;
+		    position: absolute;
+		    top: 20px;
+		    left: 10%;
+		    z-index: 1;
+		    border-radius: 2px;
+
+		}
+		.four{
+			height: 300px;
+			width: 80%;
+			background: yellow;
+			position: absolute;
+			top:20%;
+			left: 10%;
+		    z-index: 1;
+
+		}
+
+		.dowebok1{
+		    -webkit-animation-duration: 1.5s;  
+		    -webkit-animation-delay: 0.5s;   
+		     
+		}
+		.dowebok2{
+
+		    -webkit-animation-duration: 3s;   
+		    -webkit-animation-delay: 1s; 
+		}
+		.dowebok3{
+			 -webkit-animation-duration: 1s;   
+		   	-webkit-animation-delay: 4s;
+		}
+		
+		.dowebok4{
+			-webkit-animation-duration: 2s;   
+		    -webkit-animation-delay: 0.5s;
+		}
+		.five{
+			height: 200px;
+		    width: 200px;
+		    background: rgb(199,179,221);
+		    border-radius: 50%;
+		    position: absolute;
+		    top: -1%;
+    		left: -20%;
+		}
+		.six{
+			height: 200px;
+		    width: 200px;
+		    background: rgb(187,228,185);
+		    border-radius: 50%;
+		    position: absolute;
+		    top: 70%;
+    		left: -36%;
+		}
+		.seven{
+		height: 255px;
+	    width: 255px;
+	    background: rgb(200,203,184);
+	    border-radius: 50%;
+	    position: absolute;
+	    top: 20%;
+	    right: -17%;
+		}
+    </style>
+</head>
+<body>
+<!-- <div class="one"></div> -->
+<div class="animated fadeInDownBig one dowebok1"></div>
+<div class="animated fadeInDownBig two dowebok2"></div>
+<div class="three animated slideInLeft dowebok3"></div>
+<div class="four animated slideInRight dowebok3"></div>
+<div class="five animated rotateInUpLeft dowebok4 "></div>
+<div class="six animated  "></div>
+<div class="seven animated "></div>
+</body>
+<script type="text/javascript">
+$(function(){
+	//加速度
+	setTimeout(function(){
+	    setTimeout(function(){
+	        
+	        $('one').removeClass('fadeInDownBig');
+	        $('.one').addClass('slideOutRight');
+	        
+	        $('.two').removeClass('fadeInDownBig');
+	        $('.two').addClass('slideOutLeft');
+	    },3500);
+
+	    setTimeout(function(){
+
+		    $(".six").animate({
+		    	"top":"76%",
+		    	"left":"-23%"
+		    },500)
+		     $(".six").animate({
+		    	"top":"70%",
+		    	"left":"-6%"
+		    },200)
+	        $(".six").animate({
+		    	"top":"65%",
+		    	"left":"25%"
+		    },100)
+	        $(".six").animate({
+		    	"top":"60%",
+		    	"left":"35%"
+		    },100)
+		     $(".six").animate({
+		    	"top":"55%",
+		    	"left":"45%"
+		    },100)
+	       $(".six").animate({
+		    	"top":"50%",
+		    	"left":"55%"
+		    },100)
+	       $(".six").animate({
+		    	"top":"45%",
+		    	"left":"65%"
+		    },100)
+		    $(".six").animate({
+		    	"top":"40%",
+		    	"left":"75%"
+		    },100)
+		  },100);
+	},100);
+});
+</script>
+</html>

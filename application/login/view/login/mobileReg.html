@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="__STATIC__/css/addrs.css" />
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oVNnc5pGCCUbuDTICeA19CdS2Nnl16M2&s"></script>   
+<link href="__STATIC__/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link rel="stylesheet" href="__STATIC__/css/coms.css">
+<script type="text/javascript" src="__STATIC__/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery.charfirst.pinyin.js"></script>
+    <script type="text/javascript" class="sc" src="__STATIC__/js/sort.js"></script>
+    <script type="text/javascript" class="sc" src="__STATIC__/js/back.js"></script>
+<title>用户注册</title>
+<style type="text/css">
+    body{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .around{
+        font-size: 0.8rem;
+        margin: 10px 13px;
+        display: block;
+    }
+    .list{
+        display: none;
+    }
+     .b{
+        font-size: 20px;
+        float: right;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+         .fa-left{
+               float: left;
+                font-size: 34px;
+                margin-left: 15px
+         }  
+        .head{
+            height: 47px;
+            background-color:white;
+            width: 100%;
+        }
+        .browser {
+        width: 80%;
+        height: 100%;
+        float: left;
+    }
+            .line1{
+            position: absolute;
+            width: 97%;
+        }
+        .line1-1{
+            text-align: center;
+            font-size: 19px;
+            color: rgb(85,108,117);
+        }
+        .line2{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .line2 a{
+            position: relative;
+            top: 10px;
+            left: 90px;
+            letter-spacing: 2px;
+        }
+        .line2-1{
+            width: 100%;
+            margin-bottom: 1%;
+        } 
+        .line2-left{
+             float: left;
+            width: 25%;
+            /* margin-left: 5%; */
+            margin: 2% 0;
+        }
+        .line2-left img{
+            margin-top: 4px;
+            width: 32px;
+        }
+        .line2-1 i{
+            font-size: 45px;
+        }
+        .line2-1 input{
+               vertical-align: super;
+                /* border-radius: 6px; */
+                border: 1px solid white;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+                outline: 0;
+                font-size: 15px;
+                /* margin-right: 30px; */
+                padding: 7px;
+                width: 74%;
+                    color: #aaa;
+        }
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+            color:rgba(128, 128, 128, 0.57);
+            font-size: 13px;
+        }
+        #grad1 {
+            height: 26px;
+            background: -webkit-linear-gradient(gray,white); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(gray,white); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(gray,white); /* Firefox 3.6 - 15 */
+            background: linear-gradient(gray,white); /* 标准的语法（必须放在最后） */
+        }
+    .com{
+        width: 200px;
+        padding: 5px;
+        padding-left: 10px;
+        border: 1px #ccc solid;
+        border-radius: 30px;
+        padding: 10px;
+        padding-left: 40px;
+       
+
+    }
+        .btn{
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 2% 4%;
+            margin: 4% 31%;
+            background: #4c973f;
+        }
+        .abcd{
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            /*border: 1px #ccc solid;*/
+        }
+        .sub1{
+                width: 30%;
+            padding: 10px;
+            /*margin-top: 10px;*/
+            border: 1px #ccc solid;
+            border-radius: 4px;
+            background:rgb(85,108,117);
+            font-size: 15px;
+            outline: none;
+            color: white;
+        }
+        .open{
+           margin: 10px 0;
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid #CCC;
+            padding-left: 5%;
+            /* padding-top: 2px; */
+            height: 30px;
+            color: #aaa;
+        }
+        .b1{
+                width: 60px;
+            padding: 3px 4px;
+            background: rgb(90,107,116);
+            border: 1px solid #009688;
+            border-radius: 4px;
+            outline: none;
+         color: white;
+             float: right;
+        }
+        #comback{
+            position: absolute;
+            left: 1%;
+            font-size: 1.7rem;
+            margin-top: 1%;
+        }
+         body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+        #allmap{height:500px;width:100%;display: none;}
+        input[type="button"], input[type="submit"], input[type="reset"] {
+
+         -webkit-appearance: none;
+
+        }
+        textarea {  -webkit-appearance: none;}  
+        .choseaddr{
+          background: white;
+          padding: 10px;
+            border: 1px solid white;
+            border-radius: 3px;
+                padding-bottom: 0;
+                    box-shadow: 1px 1px 8px 1px #ccc;
+        }
+        #getCode{
+             width: 96px;
+            padding: 6px 7px;
+            background: rgb(90,107,116);
+            border: 1px solid #009688;
+            border-radius: 4px;
+            outline: none;
+            color: white;
+            float: right;
+            margin-right: 5%;
+        }
+      .tiaokuan{
+          text-align: center;
+          padding-bottom: 5%;
+    }
+    .tiaokuan>i{
+        margin-left: 22%
+    }
+    .tiaokuan>span{
+
+    }
+</style>
+</head>
+<body>
+ <!--     <div class="head">
+            <div class="fa-left" onclick="window.location.href='{:url("login/login/index")}'">
+            <i class="fa fa-angle-left" ></i>
+            </div>
+            <span class="b">用户注册</span>
+        <div style="clear: both;"></div>
+    </div> -->
+<div class="around ">
+
+  <div class="choseaddr">
+    <div style="     font-weight: 700;font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+        <span >请选择注册的地区:</span>
+    </div>
+    <div style="     height: 3px;padding: 0;border-bottom: 1px solid #ccc;"></div>
+    <div class="browser">
+        <!--选择地区-->
+        <section class="express-area" style="border: 0;">
+            <a id="expressArea"  href="javascript:void(0)">
+                <dl>
+                    <dt style="    font-size: 0.8rem;    color: #aaa;">选择地区：</dt>
+                    <dd id="ad" style="margin-left: 40%;    font-size: 0.8rem;    color: #aaa;">省>市>区/县</dd>
+                </dl>
+            </a>
+        </section>
+        <!--选择地区弹层-->
+        <section id="areaLayer" class="express-area-box">
+            <header>
+                <h3>选择地区</h3>
+                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+            </header>
+            <article id="areaBox">
+                <ul id="areaList" class="area-list"></ul>
+            </article>
+        </section>
+        <!--遮罩层-->
+        <div id="areaMask" class="mask"></div>
+        <script src="__STATIC__/js/jquery.area.js"></script>
+    </div>
+     <div style="width: 20%;float: left;height: 100%;padding-top: 10px;" id="dingwei">
+        <button class="b1">
+            <div style="float: left;width: 30%;margin-top: 7%;    margin-left: 5%;"> <img src="__STATIC__/img/dw.png" style="width: 100%;height: 100%;"></div>
+            <div style="    float: right;width: 60%;margin-top: 8%;">定位</div>
+        </button>  
+    </div>
+   <div style="clear: both;"></div>
+  </div>
+    <div style="clear: both;"></div>
+    <div class="choseaddr" style="margin-top: 10px;">
+        <div style="margin-top: 10px;">
+            <div style="     font-weight: 700;font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+              <span >请选择小区:</span>
+            </div>
+          <div style="     height: 3px;padding: 0;border-bottom: 1px solid #ccc;"></div>
+          <div class="open" cid="" style="cursor:pointer;"></div>
+          <div style="clear: both;"></div>
+        </div>
+    </div>
+     <div id="allmap" style="display: none;"></div>
+    <div class="abcd">
+        
+
+            <form method="POST" >
+          <div class="choseaddr">
+            <div class="line2-1">
+            <div class="line2-left">
+              <div style="     font-weight: 700;font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+                    <span >手机号:</span>
+                  </div>
+                </div>
+                <input type="tel" name="tel" placeholder="输入手机号码">
+                <div style="clear: both;"></div>
+            </div>
+          </div>
+          <div class="choseaddr" style="margin-top:10px;padding-right: 0;">
+               <div class="line2-1">
+               <div class="line2-left">
+                 <div style="     font-weight: 700;font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+                    <span >验证码:</span>
+                  </div>
+                </div>
+                <input type="text" name="code" placeholder="输入验证码" style="width: 100px;">
+                <input id="getCode" type="button" value="点击获取"   >
+                <div style="clear: both;"></div>
+            </div>
+          </div>
+                <div class="choseaddr" style="margin-top:2%;">
+            <div class="line2-1">
+            <div class="line2-left">
+              <div style="     font-weight: 700;font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+                    <span >密码:</span>
+                  </div>
+                </div>
+                <input type="password" name="password" placeholder="输入密码（最多8位）" maxlength="8">
+                <div style="clear: both;"></div>
+            </div>
+          </div>    
+            </form>
+            <!-- <a id="getCode">获取验证码</a> -->
+            
+      
+
+    </div>
+<div class="tiaokuan">
+  
+   <input type="checkbox" name="appro" id="approval" >
+  <span>同意</span>
+  <a href="{:url('tiaokuan')}" style="margin-left: 9%;color: #2196F3;">恩嘉壹服务条款</a>  
+</div>
+    <div style="text-align: center;">
+        <button class="sub1">确定</button>
+    </div>
+</div>
+
+<div class="list">
+<div class="selectcom" >
+    <div style="text-align: center;position: relative;">
+           <input type="text" name="community" class="com" placeholder="输入小区名称搜索" style="margin-top: 15%;    width: 65%;">
+           <i class="fa fa-search" aria-hidden="true" style="    position: absolute;top: 70%;left: 22%;"></i>
+    </div>
+</div>
+
+
+    <header class="fixed">
+        <div class="header">
+           <i class="fa fa-angle-left" id="comback" ></i> 小区
+        </div>
+    </header>
+
+    <div id="letter" ></div>
+    <div class="sort_box">
+        
+    <div class="initials" style="    background: rgb(255, 245, 238);">
+        <ul>
+            <li><i class="fa fa-search" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(function(){
+    $("#dingwei").click(function(){
+   var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.501573, 39.900877);
+    map.centerAndZoom(point, 16)
+  // 定位对象
+  var geoc = new BMap.Geocoder();
+  var geolocation = new BMap.Geolocation();
+  geolocation.getCurrentPosition(function(r){
+    if(this.getStatus() == BMAP_STATUS_SUCCESS){
+      var mk = new BMap.Marker(r.point);
+      map.addOverlay(mk);
+      map.panTo(r.point);
+      //$("#start_point").val(r.point.lng+','+r.point.lat);
+      // alert("当前位置经度为:"+r.point.lng+"纬度为:"+r.point.lat);
+      setLocation(r.point);
+    }else {
+     
+      alert('无法定位到您的当前位置，请手动选择您的当前位置！');
+    }
+  },{enableHighAccuracy: true});
+
+  //获取地理位置的函数
+  function setLocation(point){
+    geoc.getLocation(point, function(rs){
+      var addComp = rs.addressComponents;
+      var result = addComp.province + addComp.city + addComp.district ;
+      //$("#start").val(result);
+      //$("#start_location").val(result);
+      // alert("当前的位置为:"+result);
+      $('#ad').html(result);
+    });
+  }
+})
+    sign  = false;
+
+    $(document).on("click",".open",function(){
+        $(".sort_list").remove();
+        $(".sc").remove();
+        var addr = $('#ad').html();
+        var addr = addr.split(' &gt; ');
+        var addr = addr.join('');
+        console.log(addr)
+        if (addr=="省&gt;市&gt;区/县") {
+          alert("请先选择一个地址")
+
+        }else{
+            $.post("{:url('getCom')}",{addr:addr},function(data){
+                // console.log(data)
+                for (var i = 0; i < data.length; i++) {
+                    $(".sort_box").append(' <div class="sort_list" style="cursor:pointer;" cid="'+data[i].id+'"><div class="num_name">'+data[i].name+'</div></div>')
+                }
+
+                $("body").append("<script type=\"text/javascript\" class=\"sc\" src=\"__STATIC__/js/sort.js\"><\/script>")
+            })
+            if(!sign){
+              $(".list").css({"display":"block"});
+               $(".around").css({"display":"none"});
+             }
+        }
+
+      
+
+    })
+    $("input[name=community]").keyup(function(){
+        
+        $(".sc").remove();
+        $(".sort_list").remove();
+        var key = $(this).val();
+        var addr = $('#ad').html();
+        var addr = addr.split(' &gt; ');
+        var addr = addr.join('');
+        // console.log(addr)
+        if (addr=="省市区/县") {
+
+              $.post("{:url('findCom')}",{},function(data){
+                // console.log(data)
+                for (var i = 0; i < data.length; i++) {
+                    $(".sort_box").append(' <div class="sort_list" style="cursor:pointer;" cid="'+data[i].id+'"><div class="num_name">'+data[i].name+'</div></div>')
+                }
+
+                $("body").append("<script type=\"text/javascript\" class=\"sc\" src=\"__STATIC__/js/sort.js\"><\/script>")
+            })
+        }else{
+            $.post("{:url('findCom')}",{addr:addr,key:key},function(data){
+                // alert(data)
+                $(".sort_box").html("");
+                for (var i = 0; i < data.length; i++) {
+                    $(".sort_box").append(' <div class="sort_list" style="cursor:pointer;" cid="'+data[i].id+'"><div class="num_name">'+data[i].name+'</div></div>')
+                }
+
+                $("body").append("<script type=\"text/javascript\" class=\"sc\" src=\"__STATIC__/js/sort.js\"><\/script>")
+            })
+        }
+    })
+    $(document).on("click",".sort_list",function(){
+        com = $(this).children().html()
+        cid = $(this).attr("cid")
+        // console.log(com)
+        $(".open").html(com)
+        $(".open").attr("cid",cid)
+        $(".list").css({"display":"none"});
+        $(".around").css({"display":"block"});
+
+    }) 
+    $('#comback').click(function(){
+       $(".list").css({"display":"none"});
+        $(".around").css({"display":"block"}); 
+    })
+       var flag = true;
+       var code1 = 45464564567867678;
+      $("#getCode").click(function(){
+             phone = $('input[name=tel]').val()
+              
+              if (/^((13[0-9]|15[0-9]|17[0-9]|18[0-9])+\d{8})$/.test(phone)) {
+                  if (flag) {
+
+                        flag = false
+                          var self = this
+                          var t = 59
+                          var inv = setInterval(function(){
+                              $(self).val(t+"s")
+                              if(t<0){
+                                  $(self).val("点击获取")
+                                  flag = true
+                                  // $(self).removeClass("disabled")
+                                  clearInterval(inv)
+                              }
+                              t--
+                          }, 1000)
+
+                          console.log(phone)
+                      $.post('{:url("login/login/bindTel")}',{'phone':phone},function(data){
+                       console.log(data)
+                        if (data == 4) {
+                            alert('该手机号已被注册')
+                            flag = true
+                            clearInterval(inv)
+                         }else{ 
+                            if (data[1]!=0) {
+                              code1 = data[1];
+                              phone = data[0];
+                            }else{
+                                alert('发送不成功')
+                            }
+                         }
+                      })
+                  }
+                  
+                
+              } else {
+                  alert('手机号码不规范')
+              }
+              
+              
+          })
+      var dis = true;
+      
+         $('.sub1').click(function(){
+           
+            checkedNum = $("input[name='appro']:checked").length;
+            // console.log(checkedNum)
+            if (checkedNum) {
+                 phone1 = $('input[name=tel]').val()
+                 password = $("input[name=password]").val()
+                 var code = $('input[name=code]').val()
+
+                 var addr = $('#ad').html()
+                 var addr = addr.split(' &gt; ');
+                 var addr = addr.join('');
+                 var cid = $('.open').attr("cid")
+                 if (addr=="省市区/县") {
+                  alert('请选择地区')
+                 }else{
+                    if(cid == ""){
+                    alert('请选择小区')
+                   }else{
+                        if (code==code1&&phone==phone1) {
+                        // console.log(password)
+                          var url ="{:url('login/login/IeReg')}"
+                          if(password==""){
+                            alert("请输入密码！")
+                          }else{
+                            if (dis) {
+                               dis = false;
+                                $.post(url,{'phone':phone1,'addr':addr,'cid':cid,password:password},function(result){
+                                // console.log(result);
+                                  
+                                    window.location.href="{:url('homepage/index/homepage')}"
+                                
+                              })
+                            }
+                           
+                          }
+                        
+                        }else{
+                          alert('验证码错误')
+                        }
+                   }
+                 }
+                  
+              
+            }
+          }) 
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="__STATIC__/css/addrs.css" />
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oVNnc5pGCCUbuDTICeA19CdS2Nnl16M2&s"></script>   
+<link href="__STATIC__/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link rel="stylesheet" href="__STATIC__/css/coms.css">
+<script type="text/javascript" src="__STATIC__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/jquery.charfirst.pinyin.js"></script>
+<script type="text/javascript" class="sc" src="__STATIC__/js/sort.js"></script>
+<script type="text/javascript" class="sc" src="__STATIC__/js/back.js"></script>
+<title>用户登录</title>
+<style type="text/css">
+    body{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .around{
+        font-size: 0.8rem;
+        margin: 10px 13px;
+        display: block;
+    }
+    .list{
+        display: none;
+    }
+     .b{
+        font-size: 20px;
+        float: right;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+         .fa-left{
+               float: left;
+                font-size: 34px;
+                margin-left: 15px
+         }  
+        .head{
+            height: 47px;
+            background-color:white;
+            width: 100%;
+        }
+        .browser {
+        width: 80%;
+        height: 100%;
+        float: left;
+    }
+            .line1{
+            position: absolute;
+            width: 97%;
+        }
+        .line1-1{
+            text-align: center;
+            font-size: 19px;
+            color: rgb(85,108,117);
+        }
+        .line2{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .line2 a{
+            position: relative;
+            top: 10px;
+            left: 90px;
+            letter-spacing: 2px;
+        }
+        .line2-1{
+            width: 100%;
+            margin-bottom: 1%;
+        } 
+        .line2-left{
+             float: left;
+            width: 25%;
+            /* margin-left: 5%; */
+            margin: 2% 0;
+        }
+        .line2-left img{
+            margin-top: 4px;
+            width: 32px;
+        }
+        .line2-1 i{
+            font-size: 45px;
+        }
+        .line2-1 input{
+               vertical-align: super;
+                /* border-radius: 6px; */
+                border: 1px solid white;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+                outline: 0;
+                font-size: 15px;
+                /* margin-right: 30px; */
+                padding: 7px;
+                width: 74%;
+                    color: #aaa;
+        }
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+            color:rgba(128, 128, 128, 0.57);
+            font-size: 13px;
+        }
+        #grad1 {
+            height: 26px;
+            background: -webkit-linear-gradient(gray,white); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(gray,white); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(gray,white); /* Firefox 3.6 - 15 */
+            background: linear-gradient(gray,white); /* 标准的语法（必须放在最后） */
+        }
+    .com{
+        width: 200px;
+        padding: 5px;
+        padding-left: 10px;
+        border: 1px #ccc solid;
+        border-radius: 30px;
+        padding: 10px;
+        padding-left: 40px;
+       
+
+    }
+        .btn{
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 2% 4%;
+            margin: 4% 31%;
+            background: #4c973f;
+        }
+        .abcd{
+            width: 100%;
+            height: 190px;
+            margin-top: 50px;
+            /*border: 1px #ccc solid;*/
+        }
+        .sub1{
+                width: 30%;
+            padding: 10px;
+            /*margin-top: 10px;*/
+            border: 1px #ccc solid;
+            border-radius: 4px;
+            background:rgb(85,108,117);
+            font-size: 15px;
+            outline: none;
+            color: white;
+        }
+        .open{
+           margin: 10px 0;
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid #CCC;
+            padding-left: 5%;
+            /* padding-top: 2px; */
+            height: 30px;
+            color: #aaa;
+        }
+        .b1{
+                width: 60px;
+            padding: 3px 4px;
+            background: rgb(90,107,116);
+            border: 1px solid #009688;
+            border-radius: 4px;
+            outline: none;
+         color: white;
+             float: right;
+        }
+        #comback{
+            position: absolute;
+            left: 1%;
+            font-size: 1.7rem;
+            margin-top: 1%;
+        }
+         body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+        #allmap{height:500px;width:100%;display: none;}
+        input[type="button"], input[type="submit"], input[type="reset"] {
+
+         -webkit-appearance: none;
+
+        }
+        textarea {  -webkit-appearance: none;}  
+        .choseaddr{
+          background: white;
+          padding: 10px;
+            border: 1px solid white;
+            border-radius: 3px;
+                padding-bottom: 0;
+                    box-shadow: 1px 1px 8px 1px #ccc;
+        }
+        #getCode{
+             width: 96px;
+            padding: 6px 7px;
+            background: rgb(90,107,116);
+            border: 1px solid #009688;
+            border-radius: 4px;
+            outline: none;
+            color: white;
+            float: right;
+            margin-right: 5%;
+        }
+      .tiaokuan{
+          text-align: center;
+          padding-bottom: 5%;
+    }
+    .tiaokuan>i{
+        margin-left: 22%
+    }
+    .tiaokuan>span{
+
+    }
+</style>
+</head>
+<body>
+     <div class="head">
+            <!-- <div class="fa-left" onclick="window.location.href='personalCenter'"> -->
+            <!-- <i class="fa fa-angle-left" ></i> -->
+            <!-- </div> -->
+            <span class="b">用户登录</span>
+        <div style="clear: both;"></div>
+    </div>
+<div class="around ">
+    <div class="abcd">
+        
+
+<form method="POST" >
+  <div class="choseaddr">
+    <div class="line2-1">
+    <div class="line2-left">
+      <div style="     font-weight: 700;font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+            <span >手机号:</span>
+          </div>
+        </div>
+        <input type="tel" name="tel" placeholder="输入手机号码">
+        <div style="clear: both;"></div>
+    </div>
+     <div class="line2-1">
+       <div class="line2-left">
+         <div style="     font-weight: 700;font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+            <span >验证码:</span>
+          </div>
+        </div>
+        <input type="text" name="code" placeholder="输入验证码" style="width: 100px;">
+        <input id="getCode" type="button" value="点击获取"   >
+        <div style="clear: both;"></div>
+    </div>
+  </div>
+  <div class="choseaddr" style="margin-top: 2%">
+    <div class="line2-1">
+    <div class="line2-left" style="width: 50%;">
+      <div style="font-family: 微软雅黑;font-size: 18px;    padding-left: 2%;">
+            <span onclick="window.location.href='{:url("passwordLogin")}'" >使用密码登录</span>
+          </div>
+        </div>
+
+    <div class="line2-left" style="margin-left: 20%">
+         <div style="font-family: 微软雅黑;font-size: 18px;    padding-left: 2%; text-align: right;">
+            <span onclick="window.location.href='{:url("register")}'" >注册</span>
+          </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    
+  </div>
+     
+</form>
+       
+      
+
+    </div>
+
+    <div style="text-align: center;">
+        <button class="sub1">登录</button>
+    </div>
+</div>
+
+<div class="list">
+<div class="selectcom" >
+    <div style="text-align: center;position: relative;">
+           <input type="text" name="community" class="com" placeholder="输入小区名称搜索" style="margin-top: 20px;    width: 65%;">
+           <i class="fa fa-search" aria-hidden="true" style="    position: absolute;
+    top: 44%;
+    left: 22%;"></i>
+    </div>
+</div>
+
+
+    <header class="fixed">
+        <div class="header">
+           <i class="fa fa-angle-left" id="comback" ></i> 小区
+        </div>
+    </header>
+
+    <div id="letter" ></div>
+    <div class="sort_box">
+        
+    <div class="initials" style="    background: rgb(255, 245, 238);">
+        <ul>
+            <li><i class="fa fa-search" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+      
+$(function(){
+  
+
+      
+
+  
+       var flag = true;
+       var code1 = 178978978945465;
+      $("#getCode").click(function(){
+             phone = $('input[name=tel]').val()
+              
+              if (/^((13[0-9]|15[0-9]|17[0-9]|18[0-9])+\d{8})$/.test(phone)) {
+                  if (flag) {
+
+                        flag = false
+                          var self = this
+                          var t = 59
+                          var inv = setInterval(function(){
+                              $(self).val(t+"s")
+                              if(t<0){
+                                  $(self).val("点击获取")
+                                  flag = true
+                                  // $(self).removeClass("disabled")
+                                  clearInterval(inv)
+                              }
+                              t--
+                          }, 1000)
+
+                          console.log(phone)
+                      $.post('{:url("login/login/verifyTel")}',{'phone':phone},function(data){
+                       // console.log(data)
+                       if (data == 4) {
+                          if (confirm("该手机号未注册，确定立即注册么？")) {
+                            window.location.href="{:url('login/login/mobileReg')}"
+                          }
+                          flag = true
+                          clearInterval(inv)
+                       }else{
+                          if (data[1]!=0) {
+                            code1 = data[1];
+                          }else{
+                              alert('发送不成功')
+                          }
+                       }
+                       
+                      })
+                  }
+                  
+                
+              } else {
+                  alert('手机号码不规范')
+              }
+              
+              
+          })
+         $('.sub1').click(function(){
+            checkedNum = $("input[name='appro']:checked").length;
+            // console.log(checkedNum)
+          
+                 phone = $('input[name=tel]').val()
+                 var code = $('input[name=code]').val()
+                 // alert(code)
+                  if (code==code1) {
+                    // alert(code1)
+                  // console.log(phone,addr,cid)
+                    var url ="{:url('login/login/goHomePage')}"
+                    $.post(url,{'phone':phone},function(result){
+                        if (result==1) {
+                            window.location.href="{:url('homepage/index/homepage')}"
+                          }
+                    })
+                  }else{
+                    alert('验证码错误')
+                  }
+            })
+           
+})
+
+</script>
+
+</body>
+</html>
