@@ -20,12 +20,12 @@ function mp($arr){
 function getCode(){
 	$redirect_uri = 'http://pxxy.90web.cn/gp/public/index.php/login/login/getOpenid';
 	$redirect_uri = urlencode($redirect_uri);
-	$url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1bd483ef35c568ff&redirect_uri='.$redirect_uri.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
+	$url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=xxxx&redirect_uri='.$redirect_uri.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
 	header("location:".$url);
 	exit;
 }
 function getAccessToken($code){
-	$url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx1bd483ef35c568ff&secret=c0cc3ecc6cd3c095b685084c3dfee39b&code='.$code.'&grant_type=authorization_code';
+	$url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=xxxxxxx&secret=xxxxxx&code='.$code.'&grant_type=authorization_code';
     $data = file_get_contents($url);
     $data = json_decode($data,true);
     return $data;
